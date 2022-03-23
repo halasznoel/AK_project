@@ -1,5 +1,4 @@
-header{    
-    background-position: center center;
-    height: 350px;
-    background-image: url(../Antik_kozepkor/\ PROJECT/kepek/headerhatter.jpg);
+.headerhatter {
+    background: url(../Antik_kozepkor_project/kepek/headerhatter.jpg);
+    opacity: 0.5;
 }
