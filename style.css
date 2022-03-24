@@ -2,3 +2,55 @@
     background: url(../Antik_kozepkor_project/kepek/headerhatter.jpg);
     opacity: 0.5;
 }
+.navbar {
+    background-color: rgb(224, 127, 0);
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.container,.navbar {
+    animation: transitionIn 0.75s;
+}
+h1 {
+    background-color: rgb(224, 127, 0);
+}
+.nav-link {
+    color:black;
+}
+.gomb {
+    background-color: rgb(224, 127, 0);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    color: black;
+    margin-right: 10px;
+}
+.gomb::after, .gomb::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: rgb(224, 127, 0);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.gomb:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 44, 0);
+}
+nav {
+    text-decoration: none;
+}
+.nav-link:hover {
+    color:white;
+}
