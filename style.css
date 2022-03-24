@@ -1,6 +1,34 @@
-.headerhatter {
-    background: url(../Antik_kozepkor_project/kepek/headerhatter.jpg);
-    opacity: 0.5;
+.gomb {
+    background-color: rgb(224, 127, 0);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: black 3px solid;
+    margin-right: 10px;
+    z-index: 1;
+}
+.gomb:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.gomb:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: black;
+}
+.gomb:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 .navbar {
     background-color: rgb(224, 127, 0);
@@ -22,35 +50,15 @@
 h1 {
     background-color: rgb(224, 127, 0);
 }
-.nav-link {
+.navbar-brand {
     color:black;
 }
-.gomb {
-    background-color: rgb(224, 127, 0);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    color: black;
-    margin-right: 10px;
+
+
+.headerhatter {
+    background: url(../Antik_kozepkor_project/kepek/headerhatter.jpg);
+    opacity: 0.5;
 }
-.gomb::after, .gomb::before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    background: rgb(224, 127, 0);
-    border-radius: inherit;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.gomb:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(92, 44, 0);
-}
-nav {
+a {
     text-decoration: none;
-}
-.nav-link:hover {
-    color:white;
 }
