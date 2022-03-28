@@ -55,7 +55,7 @@ h1 {
 
 .headerhatter {
     background: url(../Antik_kozepkor_project/kepek/headerhatter.jpg);
-    opacity: 0.5;
+    opacity: 1;
 }
 a {
     text-decoration: none;
@@ -115,4 +115,9 @@ a {
 
 .navbar-toggler.collapsed .toggler-icon {
     background-color: black;
+}
+
+p {
+    text-indent: 15px;
+    
 }
